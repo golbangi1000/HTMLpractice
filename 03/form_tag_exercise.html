@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+         인풋태그나 인풋엘레멘트라고도 함 
+    
+    -->
+    <form name="myform3" action="login.do" method="get">
+      <div style="font-size: 4px">
+        <font color=" red">*</font>표시 항목은 필수 입력 항목입니다.
+      </div>
+      <table>
+        <tr>
+          <td align="center">아이디:</td>
+          <td>
+            <font color=" red">*</font>
+            <input type="text" name="id" />
+            <input type="button" value="ID중복검사" /><br />
+            <div style="font-size: 4px">
+              &nbsp;&nbsp; 아이디는 영문, 숫자조합으로 하셔야합니다.[4자리이상 12자리이하]
+              <br />&nbsp;&nbsp;&nbsp;아이디는
+              <font color=" red">소문자로</font>
+              저장 됩니다
+            </div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">암호</td>
+          <td>
+            <font color=" red">*</font> <input type="password" name="pwd" />
+            <div style="font-size: 4px">
+              &nbsp;&nbsp;&nbsp;비밀번호는 4자리이상 12자리 이하로 입력해주세요.
+            </div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">암호확인</td>
+          <td>
+            <font color=" red">*</font>
+            <input type="password" name="pwd" />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">이름</td>
+          <td><font color=" red">*</font> <input type="text" name="name" /></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">대화명:</td>
+          <td>
+            <font color=" red">*</font>
+            <input type="text" name="nickname" />
+            <input type="button" value="중복검사" />
+            <div style="font-size: 4px">
+              &nbsp;&nbsp;&nbsp;대화명을 지정하지 않으시면 회원님의 이름으로 대화명이
+              지정됩니다
+              <br />&nbsp;&nbsp;&nbsp;대화명은 한글, 영문 관계없이 10글자 이내로 하셔야 합니다
+            </div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">주민등록번호:</td>
+          <td>
+            <font color=" red">*</font>
+            <input type="text" name="ssn" size="7" />
+            -
+            <input type="text" name="ssn" size="7" />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">생년월일</td>
+          <td>
+            <font color=" red">*</font>
+            <input type="text" size="2" name="birthday" />년
+            <input type="text" size="1" name="birthday" />월
+            <input type="text" size="1" name="birthday" />일
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">성별:</td>
+          <td>
+            <font color=" red">*</font> 남자<input type="radio" name="sex" value="man" />
+            여자<input type="radio" name="sex" value="woman" />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">E-mail</td>
+          <td><font color=" red">*</font> <input type="text" name="email" /></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">메일수신</td>
+          <td>
+            <font color=" red">*</font>수신동의<input
+              type="radio"
+              name="email"
+              value="accept"
+            />
+            수신거부<input type="radio" name="email" value="decline" />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">우편번호:</td>
+          <td>
+            <font color=" red">*</font>
+            <input type="text" name="zipcode" size="5" />
+            -
+            <input type="text" name="zipcode" size="5" />
+            <input type="button" value="검색" />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">주소:</td>
+          <td>
+            <font color=" red">*</font>
+            <input type="text" name="address" size="30" />
+            <br />
+            &nbsp;&nbsp;<input type="text" name="address" />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">전화번호:</td>
+          <td>
+            <font color=" red">*</font>
+            <select name="phonenumber">
+              <option value="02">02</option>
+              <option value="011">011</option>
+              <option value="031">031</option>
+            </select>
+            -
+            <input type="text" name="homephone" size="5" />
+            -
+            <input type="text" name="homephone" size="5" />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">핸드폰:</td>
+          <td>
+            <font color=" red">*</font>
+            <select name="phonenumber">
+              <option value="010">010</option>
+              <option value="011">011</option>
+              <option value="031">031</option>
+            </select>
+            -
+            <input type="text" name="cellphone" size="5" />
+            -
+            <input type="text" name="cellphone" size="5" />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">직업:</td>
+          <td>
+            <font color=" red">*</font>
+            <select name="job">
+              <option value="" selected hidden>선택하세요</option>
+              <option value="거지">거지</option>
+              <option value="학생">학생</option>
+              <option value="교수">교수</option>
+            </select>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">취미</td>
+          <td>
+            <font color=" red">*</font>
+            <input type="checkbox" name="hobby1" value="m1" />스포츠
+            <input type="checkbox" name="hobby2" value="m2" />쇼핑
+            <input type="checkbox" name="hobby3" value="m3" />인터넷
+            <input type="checkbox" name="hobby4" value="m4" />여행
+            <input type="checkbox" name="hobby5" value="m5" />독서
+            <input type="checkbox" name="hobby6" value="m6" />영화감상
+            <input type="checkbox" name="hobby7" value="m7" />음악감상
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">자기소개</td>
+          <td>
+            <textarea
+              name="selfintro"
+              cols="65"
+              rows="5"
+              style="overflow-y: scroll"
+            ></textarea>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td align="center">
+            <input type="submit" value="등록" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" value="취소" />
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
