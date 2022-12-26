@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid red;
+        width: 200px;
+        height: 200px;
+        background: yellow;
+      }
+      div.c1:hover {
+        transform-origin: bottom right 60px;
+        transform: translate(0px, 390px) rotate(180deg) scale(0.7);
+        background-color: black;
+        transition-duration: 3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="c1">박스안에 마우스를 올리면 무엇이 보일까요</div>
+  </body>
+</html>
