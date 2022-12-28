@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+
+  /* https://stackoverflow.com/questions/17219442/why-does-removing-a-border-from-a-div-break-my-layout */
+}
+li {
+  list-style-type: none;
+}
+#wrap {
+  width: 940px;
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+.clear {
+  clear: both;
+}
+header {
+  width: 100%;
+  height: 80px;
+}
+header > img {
+  float: left;
+}
+.head_topul {
+  float: right;
+}
+.head_topul li {
+  font-size: 11.5px;
+  display: inline-block;
+}
+
+.head_ul {
+  border: 1px #a8d26a solid;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 170px;
+  margin-right: 20px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #a8d26a 5%, #51900f);
+}
+.head_ul li {
+  display: inline;
+  padding-left: 32px;
+  color: white;
+  font-size: 14px;
+}
+.head_ul li a,
+.head_ul li a:visited,
+.head_ul li a :active {
+  text-decoration: none;
+  color: white;
+}
+
+aside {
+  width: 170px;
+  height: 750px;
+  float: left;
+}
+.login_box {
+  background-color: #f3f3f3;
+  padding: 5px;
+  border: gray solid 1px;
+  border-radius: 9px;
+}
+
+.login_box input/*후손 선택자*/ {
+  width: 85px;
+  height: 18px;
+}
+
+.id_pass,
+.login_btn {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.room_box {
+  margin-top: 10px;
+  background-color: #f3f3f3;
+  padding: 5px;
+  border: gray solid 1px;
+  border-radius: 9px;
+}
+.btns li {
+  display: flex;
+}
+
+.room li {
+  margin-top: 2px;
+  font-size: 11px;
+}
+.room li::before {
+  content: "• ";
+  color: blue;
+}
+
+main {
+  width: 100%-250px;
+  height: 750px;
+}
+
+.main_img {
+  object-fit: contain;
+}
+.notice {
+  width: 300px;
+  height: 111px;
+  margin-top: 10px;
+}
+.notice .book {
+  float: left;
+}
+.notice_contents {
+  float: left;
+}
+.date {
+  float: right;
+}
+.notice_contents,
+.date {
+  font-size: 10.5px;
+}
+.free {
+  width: 300px;
+  height: 111px;
+  margin-top: 10px;
+}
+.free .book {
+  float: left;
+}
+.free_contents {
+  float: left;
+}
+.free_contents,
+.date {
+  font-size: 10.5px;
+}
+.title {
+  float: left;
+}
+.more {
+  float: right;
+}
+.noticeAndFree2 {
+  display: flex;
+}
+
+.youtube {
+  width: 400px;
+  height: 233px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.photo_gallery {
+  width: 700px;
+  height: 220px;
+}
+.photo_sublist {
+  padding: 10px;
+  border: 1px gray solid;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+.photo_sublist > li {
+  float: left;
+  margin-left: 30px;
+}
+.photo_sublist > li li {
+  text-align: center;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.copyrightaddr {
+  width: 300px;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 8px;
+}
