@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+
+  /* https://stackoverflow.com/questions/17219442/why-does-removing-a-border-from-a-div-break-my-layout */
+}
+hr {
+  color: green;
+}
+li {
+  list-style-type: none;
+}
+#wrap {
+  width: 1050px;
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+.clear {
+  clear: both;
+}
+header {
+  width: 100%;
+  height: 130px;
+}
+header > img {
+  margin-top: 30px;
+  float: left;
+}
+.search_function {
+  margin-left: 350px;
+  margin-top: 40px;
+}
+.search_submit {
+  border: 1px black solid;
+  background-image: url(img/btn_search.gif);
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+}
+.search_text {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: gray;
+}
+.search_text:focus {
+  border-color: green;
+}
+.search_function {
+  color: green;
+  display: flex;
+}
+.topmenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  padding-top: 25px;
+}
+.topmenu li {
+  float: left;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.login,
+.createacc {
+  color: green;
+}
+.mainmenu {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #4e4c4d;
+  color: white;
+}
+.mainmenu li {
+  display: inline;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+aside {
+  width: 230px;
+  height: 361px;
+  float: left;
+}
+
+main {
+  width: 100%-230px;
+  height: 361px;
+}
+.aside_main {
+  align-items: center;
+}
+
+.category_title {
+  background-color: green;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 35px 10px 35px;
+}
+.category_list li {
+  border-bottom: 1px gray solid;
+  font-weight: bold;
+  font-size: 12px;
+  padding-left: 15px;
+  padding-top: 6.2px;
+  padding-bottom: 6.2px;
+}
+main img {
+  float: left;
+}
+.main_notice1 {
+  background-image: url(img/latest_notice.gif);
+  background-repeat: no-repeat;
+}
+.main_notice2 {
+  margin-top: 40px;
+}
+.main_notice2 li {
+  font-size: 9px;
+}
+.main_notice2 li::before {
+  padding-left: 10px;
+  content: "• ";
+  color: aqua;
+}
+.event {
+  margin-top: 50px;
+  background-image: url(img/week_event.gif);
+  background-repeat: no-repeat;
+}
+.event img {
+  margin: 60px 15px 0 15px;
+}
+.speical_wallpaper_set {
+  margin-top: 20px;
+}
+.special {
+  height: 390px;
+  background-image: url(img/special_shop.gif);
+  background-repeat: no-repeat;
+  float: left;
+}
+.special img {
+  border: gray 1px solid;
+  margin: 55px 30px 20px 30px;
+  display: inline;
+}
+.wallpaper_set {
+  margin-left: 590px;
+}
+.wallpaper1 {
+  background-image: url(img/landscape.gif);
+  background-repeat: no-repeat;
+}
+.wallpaper1 div {
+  margin-left: 140px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.wallpaper1 div img {
+  width: 120px;
+  height: 110px;
+  object-fit: contain;
+}
+.wallpaper2 {
+  margin-top: 10px;
+  background-image: url(img/point_wallpaper.gif);
+  background-repeat: no-repeat;
+}
+.wallpaper2 div {
+  margin-left: 140px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.wallpaper2 div img {
+  width: 120px;
+  height: 110px;
+  object-fit: contain;
+}
+
+.wallpaper3 {
+  margin-top: 10px;
+
+  background-image: url(img/children.gif);
+  background-repeat: no-repeat;
+}
+
+.wallpaper3 div {
+  margin-left: 140px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.wallpaper3 div img {
+  width: 120px;
+  height: 110px;
+  object-fit: contain;
+}
+.new_arrival1 {
+  margin-top: 15px;
+}
+.new_arrival_title {
+  color: green;
+}
+.new_stuff {
+  float: left;
+  padding-right: 40px;
+}
+
+.new_stuff_text {
+  text-align: center;
+}
+
+.new_stuff_text ~ span {
+  color: green;
+}
+
+.env {
+  color: green;
+}
+.env_price {
+  font-weight: bold;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  height: 200px;
+}
+
+.footer_mainmenu {
+  margin-top: 40px;
+  text-align: center;
+  padding: 10px;
+  background-color: #4e4c4d;
+  color: white;
+  width: 1000px;
+  height: 22px;
+  overflow-x: hidden;
+}
+.footer_mainmenu li {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+.second_footer {
+  display: flex;
+}
+.flexend {
+  margin-left: auto;
+  margin-right: 50px;
+}
+.copyrightaddr {
+  font-size: 10px;
+  font-weight: bold;
+  color: gray;
+}

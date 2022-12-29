@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+
+  /* https://stackoverflow.com/questions/17219442/why-does-removing-a-border-from-a-div-break-my-layout */
+}
+hr {
+  color: green;
+}
+li {
+  list-style-type: none;
+}
+#wrap {
+  width: 1050px;
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+.clear {
+  clear: both;
+}
+header {
+  width: 100%;
+  height: 130px;
+}
+header > img {
+  margin-top: 30px;
+  float: left;
+}
+.search_function {
+  margin-left: 350px;
+  margin-top: 40px;
+}
+.search_submit {
+  border: 1px black solid;
+  background-image: url(img/btn_search.gif);
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+}
+.search_text {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: gray;
+}
+.search_text:focus {
+  border-color: green;
+}
+.search_function {
+  color: green;
+  display: flex;
+}
+.topmenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  padding-top: 25px;
+}
+.topmenu li {
+  float: left;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.login,
+.createacc {
+  color: green;
+}
+.mainmenu {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #4e4c4d;
+  color: white;
+}
+.mainmenu li {
+  display: inline;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+aside {
+  width: 230px;
+  height: 570px;
+  float: left;
+}
+
+.aside_main {
+  align-items: center;
+}
+main {
+  width: 100%-230px;
+  height: 570px;
+  margin-top: 20px;
+  margin-left: 250px;
+}
+.category_title {
+  background-color: green;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 35px 10px 35px;
+}
+.category_list li {
+  border-bottom: 1px gray solid;
+  font-weight: bold;
+  font-size: 12px;
+  padding-left: 15px;
+  padding-top: 6.2px;
+  padding-bottom: 6.2px;
+}
+.tel_image {
+  border: gray solid 1px;
+  margin-top: 20px;
+}
+
+.main_title {
+  padding-bottom: 5px;
+  border-bottom: 1px green;
+}
+
+.product_img {
+  margin-top: 15px;
+  text-align: center;
+  float: left;
+}
+.pic_control {
+  margin-top: 10px;
+}
+
+.product_detail {
+  margin-top: 20px;
+  margin-left: 370px;
+}
+.detail_title {
+  font-size: 17px;
+  font-weight: bold;
+  border-bottom: black 1px solid;
+  padding-bottom: 10px;
+}
+.product_detail table {
+  margin-top: 20px;
+}
+.product_detail td {
+  padding: 5px;
+}
+.first_col {
+  width: 100px;
+}
+
+.product_bottom {
+  margin-top: 10px;
+  border-bottom: black 1px solid;
+}
+.product_table2 {
+  border-bottom: black 1px solid;
+}
+
+.buycart {
+  margin-top: 10px;
+  margin-right: 20px;
+  float: right;
+}
