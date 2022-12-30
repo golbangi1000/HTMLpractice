@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+      }
+      .clear {
+        clear: both;
+      }
+      #wrap {
+        width: 1300px;
+        height: 1600px;
+        background-color: black;
+      }
+      #wrap div {
+        float: left;
+      }
+
+      .divSet > div {
+        /*https://stackoverflow.com/questions/4801181/vertically-and-horizontally-centering-text-in-circle-in-css-like-iphone-notific*/
+        margin: 10px;
+        background-color: gray;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 70px;
+        color: white;
+      }
+      .divSet .gray {
+        font-weight: bold;
+
+        color: black;
+        background-color: lightgray;
+      }
+      .divSet > .lastcolumn {
+        background-color: orange;
+      }
+      #zero {
+        width: 265px;
+        border-radius: 100px;
+        margin-right: 25px;
+        justify-content: left;
+        padding-left: 45px;
+      }
+      #dot {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="divSet" id="first_set">
+        <div class="gray">AC</div>
+        <div class="gray"><sup>+</sup>/<sub>-</sub></div>
+        <div class="gray">%</div>
+        <div class="lastcolumn">&divide;</div>
+      </div>
+      <div class="clear"></div>
+      <div class="divSet">
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div class="lastcolumn">&times;</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="divSet">
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="lastcolumn">&minus;</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="divSet">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="lastcolumn">&plus;</div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="divSet">
+        <div id="zero">0</div>
+        <div id="dot">.</div>
+        <div class="lastcolumn">=</div>
+      </div>
+    </div>
+  </body>
+</html>

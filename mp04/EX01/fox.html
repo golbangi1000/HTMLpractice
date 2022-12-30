@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+        background-color: lightgray;
+      }
+      .clear {
+        clear: both;
+      }
+      .foxSet {
+        width: 1500px;
+        margin: 300px 0 300px 0;
+      }
+      .foxSet div {
+        float: left;
+      }
+      .fox {
+        width: 430px;
+        height: 200px;
+        margin: 0 20px 0 20px;
+        border-radius: 15px;
+      }
+      .fox img {
+        width: 150px;
+        height: 195px;
+        object-fit: contain;
+        float: left;
+      }
+      .words {
+        margin: 30px 5px 30px 5px;
+        width: 270px;
+      }
+      .firstp {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .secondp {
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        color: gray;
+      }
+      #fox1,
+      #fox1 img,
+      #fox1 div,
+      #fox2,
+      #fox2 img,
+      #fox2 div,
+      #fox3,
+      #fox3 img,
+      #fox3 div {
+        background-color: white;
+      }
+      #fox2,
+      #fox3 {
+        border: blue 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="foxSet">
+      <div id="fox1" class="fox">
+        <img src="img/fox-in-suit.png" alt="first fox" />
+        <div class="words">
+          <div class="firstp">모든 웹사이트를 누가 호스팅하는지 찾으십시오</div>
+          <div class="secondp">
+            웹사이트의 URL을 입력하여 어떤 호스팅서비스를 사용하는지 알아보십시오
+          </div>
+        </div>
+      </div>
+
+      <div id="fox2" class="fox">
+        <img src="img/fox-with-horn.png" alt="second fox" />
+        <div class="words">
+          <div class="firstp">시장 점유율 2021</div>
+          <div class="secondp">
+            국가별로 나늰 각 호스팅 회사의 2021 시장 점유율을 살펴보십시오
+          </div>
+        </div>
+      </div>
+
+      <div id="fox3" class="fox">
+        <img src="img/fox-with-server.png" alt="third fox" />
+        <div class="words">
+          <div class="firstp">웹 호스팅의 일대일 비교</div>
+          <div class="secondp">
+            3개까지의 웹호스팅 회사를 간단히 비교하고 어느 것이 더 나은지 보십시오
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

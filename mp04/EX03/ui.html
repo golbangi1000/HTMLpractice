@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+      }
+      ul {
+        list-style-type: none;
+      }
+      #wrap {
+        font-family: "돋움", "맑은 고딕";
+        font-size: 100%;
+        background-color: lightgray;
+      }
+      header > div {
+        background-color: blue;
+        color: white;
+        height: 80px;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+      #mainmenu1,
+      #mainmenu2,
+      #mainmenu3,
+      #mainmenu4 {
+        /*클래스 여러개 넣어서 해도됨 */
+        background-color: #bca9f5;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+      }
+      main {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightgray;
+      }
+      main h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+      main table {
+        border: gray 1px solid;
+      }
+      main td {
+        text-align: center;
+        width: 240px;
+        border: 1px gray solid;
+        font-weight: bold;
+        border: gray 1px solid;
+      }
+      main td:nth-child(1) {
+        width: 300px;
+      }
+      main td:nth-child(2) {
+        text-align: left;
+        /*https://developer.mozilla.org/ko/docs/Web/CSS/:nth-child*/
+      }
+
+      footer div {
+        color: white;
+        font-size: 1.3em;
+        padding: 30px 90px 30px 90px;
+        background: linear-gradient(90deg, blue 10%, white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      [class*="c"] {
+        width: 100%;
+      }
+      @media only screen and (min-width: 700px) {
+        .c1 {
+          width: 8.33%;
+          float: left;
+        }
+        .c2 {
+          width: 16.66%;
+          float: left;
+        }
+        .c3 {
+          width: 25%;
+          float: left;
+        }
+        .c4 {
+          width: 33.33%;
+          float: left;
+        }
+        .c5 {
+          width: 41.66%;
+          float: left;
+        }
+        .c6 {
+          width: 50%;
+          float: left;
+        }
+        .c7 {
+          width: 58.33%;
+          float: left;
+        }
+        .c8 {
+          width: 66.66%;
+          float: left;
+        }
+        .c9 {
+          width: 75%;
+          float: left;
+        }
+        .c10 {
+          width: 83.33%;
+          float: left;
+        }
+        .c11 {
+          width: 91.66%;
+          float: left;
+        }
+        .c12 {
+          width: 100%;
+          float: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header class="c12">
+        <div>쇼핑몰 회원관리 VER 1.0</div>
+      </header>
+      <div id="mainmenu1" class="c3">회원등록</div>
+      <div id="mainmenu2" class="c3">회원목록조회/수정</div>
+      <div id="mainmenu3" class="c3">회원매출조회</div>
+      <div id="mainmenu4" class="c3">홈으로</div>
+      <main class="c12">
+        <div>
+          <h2>쇼핑몰 회원 등록</h2>
+          <form name="myform3" action="login.do" method="get">
+            <div>
+              <table>
+                <tr>
+                  <td>회원번호(자동발생)</td>
+                  <td><input type="text" name="accountNumber" /></td>
+                </tr>
+                <tr>
+                  <td>회원성명</td>
+                  <td><input type="text" name="memberName" /></td>
+                </tr>
+                <tr>
+                  <td>회원주소</td>
+                  <td><input type="text" name="memberAddr" /></td>
+                </tr>
+                <tr>
+                  <td>가입일자</td>
+                  <td><input type="text" name="creationDate" /></td>
+                </tr>
+                <tr>
+                  <td>고객등급[A:VIP,B:일반,C:직원</td>
+                  <td><input type="text" name="rank" /></td>
+                </tr>
+                <tr>
+                  <td>도시코드</td>
+                  <td><input type="text" name="cityCode" /></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <button type="submit" value="등록">등록</button>
+                    <button type="button" value="조회">조회</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="c12">
+        <div>
+          HRDKOREA Copyright@2016 All rights reserved. Human Resources Developement Service of
+          Korea
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
